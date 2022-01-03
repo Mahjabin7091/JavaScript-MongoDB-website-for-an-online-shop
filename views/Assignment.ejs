@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Shop</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script>
+    </script>
+</head>
+<body>
+    <div class="container">
+       <h1>My Shop</h1>
+       
+       <a href="/MongoosResult">MongoosResult</a>
+
+       <form action="/" method="post" onsubmit="return formSubmit();" >
+            <div class="form-group">
+                <label for="username" class="form-label">Full name*</label>
+                <input type="text" class="form-control" name="username" id="username" placeholder="Full Name">
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Email address*</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="email">
+            </div>
+            <div class="form-group">
+                <label for="phone" class="form-label">Phone number*</label>
+                <input type="phone" class="form-control" name="phone" id="phone" placeholder="xxx-xxx-xxxx">
+            </div>
+            <div class="form-group">
+                <label for="address" class="form-label">Address*</label>
+                <input type="address" class="form-control" name="address" id="address" >
+            </div>
+            <div class="form-group">
+                <label for="city" class="form-label">City*</label>
+                <input type="city" class="form-control" name="city" id="city">
+            </div>
+            <div class="form-group">
+                <label for="postCode" class="form-label">Postal Code*</label>
+                <input type="postCode" class="form-control" name="postCode" id="postCode"  placeholder="X2X 2X2">
+            </div>
+            <div class="form-group">
+                <label for="Provinve" class="form-label">Province* : </label>
+                <select id="Provinve" class="form-control" name="Provinve">
+                    <option value="Ontario">Ontario</option>
+                    <option value="Manitoba">Manitoba</option>
+                    <option value="Qubec">Qubec</option>  
+                </select>
+                </div>
+                <div class="form-group">
+                    <label for="product1" class="form-label">Product 1</label>
+                    <input type="product1" class="form-control" name="product1" id="product1">
+                </div>
+                <div class="form-group">
+                    <label for="product2" class="form-label">Product 2</label>
+                    <input type="product2" class="form-control" name="product2" id="product2">
+                </div>
+                <div class="form-group">
+                    <label for="product3" class="form-label">Product 3</label>
+                    <input type="product3" class="form-control" name="product3" id="product3">
+                </div>
+                <div class="form-group">
+                    <label for="Delivary" class="form-label">Delivary Time : </label>
+                    <select id="Delivary" class="form-control" name="Delivary">
+                        <option value="01">1 Day</option>
+                        <option value="02">2 Days</option>
+                        <option value="03">3 Days</option>
+                        <option value="04">4 Days</option>   
+                    </select>
+                    </div>
+
+            <!--<button type="submit" class="btn btn-primary">Submit</button>-->
+            <input type='submit' class="btn btn-primary" id='Submit' value='Place Order'/>
+            <p id="errors"></p>
+        </form>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+        <div class="clear"></div>
+
+        </div>
+            <% if(typeof errors !== 'undefined'){
+                    for(var error of errors){
+                    %>
+                        <h3><%= error.msg %></h3>
+                    <%
+                    }
+                }
+            %>
+        </div>
+    </body>
+</html>

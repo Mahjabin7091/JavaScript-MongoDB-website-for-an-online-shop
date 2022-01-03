@@ -1,0 +1,45 @@
+
+<body> 
+    <section>
+       <table>
+           <thead>
+                <tr>
+                   <th>Name</th>
+                   <th>Email</th>
+                   <th>Phone</th>
+                   <th>Postcode</th>
+                   <th>product1</th>
+                   <th>product2</th>
+                   <th>product3</th>
+                   <th>Subtotal</th>
+                   <th>Tax</th>
+                   <th>Total</th>
+                   <th>Delivary</th>
+                 </tr>
+           </thead>
+           <tbody>
+               <%
+                    for(order of orders){
+               %>
+            <tr>
+                <td><%= order.username %></td>
+                <td><%= order.email %></td>
+                <td><%= order.phone %></td>
+                <td><%= order.postCode %></td>
+                <td><%= order.product1 %></td>
+                <td><%= order.product2 %></td>
+                <td><%= order.product3 %></td>
+                <td>$<%= order.subTotal.toFixed(2) %></td>
+                <td>$<%= order.tax.toFixed(2) %></td>
+                <td>$<%= order.total.toFixed(2) %></td>
+                <td>$<%= order.Delivary.toFixed(2) %></td>
+              </tr>
+              <%
+            }
+            %>
+           </tbody>
+       </table> 
+    </section>
+
+</body>
+

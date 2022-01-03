@@ -1,0 +1,52 @@
+<html>
+
+<body>
+    <p>Your Receipt:</p>
+        <table>
+          <tr>
+            <th>Name: </th>
+            <td><%= username %></td>
+          </tr>
+          <tr>
+            <th>Email: </th>
+            <td><%= email %></td>
+          </tr>
+          <tr>
+            <th>Phone: </th>
+            <td><%= phone %></td>
+          </tr>
+          <tr>
+            <th>delivary Address: </th>
+            <td><%= postCode %></td>
+          </tr>
+          <tr>
+            <th>Product 1 @ $10.00: </th>
+            <td><%= product1 %></td>
+          </tr>
+          <tr>
+            <th>Product 2 @ $20.00: </th>
+            <td><%= product2 %></td>
+          </tr>
+          <tr>
+            <th>Product 3 @ $30.00: </th>
+            <td><%= product3 %></td>
+          </tr>
+          <tr>
+            <th>Shipping Charges: </th>
+            <td>$<%= Delivary.toFixed(2) %></td>
+          </tr>
+          <tr>
+            <th>Subtotal: </th>
+            <td>$<%= subTotal.toFixed(2) %></td>
+          </tr>
+          <tr>
+            <th>Tax: </th>
+            <td>$<%= tax.toFixed(2) %></td>
+          </tr>
+          <tr>
+            <th>Total: </th>
+            <td>$<%= total.toFixed(2) %></td>
+          </tr>
+        </table>
+    </body>
+</html>

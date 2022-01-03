@@ -1,0 +1,29 @@
+{
+  "name": "12",
+  "version": "1.0.0",
+  "description": "Assignment4",
+  "main": "Assignment4.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Assignment4 responsibility"
+  },
+  "keywords": [
+    "2397"
+  ],
+  "author": "Mahjabin Sajadi",
+  "license": "ISC",
+  "dependencies": {
+    "alert": "^5.0.10",
+    "body-parser": "^1.19.0",
+    "connect-flash": "*",
+    "ejs": "*",
+    "express": "^4.17.1",
+    "express-messages": "*",
+    "express-session": "^1.17.2",
+    "express-validator": "^6.12.0",
+    "mongoose": "*"
+  }
+}
